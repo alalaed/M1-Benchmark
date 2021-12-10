@@ -47,9 +47,9 @@ const randomNumber = function(){
 // or for completely random numbers
 //ex.26
 
-const randomNumbers = function(){
+const randomNumbers = function(n){
     let randArray = []
-    for(i=0; i<10;i++){
+    for(i=0; i<n;i++){
         let x = Math.floor(Math.random()*101)
         randArray.push(x)
         
@@ -84,3 +84,23 @@ const minimum = function(){
     }return minimum
 }
 console.log(minimum())
+
+// ex 27 
+
+const createArray = function(){
+
+}
+const arrayOfArrays = function(){
+    let arr = []
+}
+
+let largeArray = []
+const arrayOfArrays = function(){
+    for(i=0; i<10; i++){
+        
+        let random = randomNumbers()
+        largeArray.push(random)
+    }return largeArray
+}
+
+console.log(arrayOfArrays(n))
