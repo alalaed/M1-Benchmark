@@ -16,3 +16,16 @@ a{
     border-width: 3px;
     border-radius: 30px;
 }
+
+p{
+    margin: 13px auto;
+}
+
+.font{
+    font-size: large;
+    font-weight: 300;
+}
+
+.invisible{
+    visibility: hidden;
+}
