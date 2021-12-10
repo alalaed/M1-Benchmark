@@ -1,4 +1,4 @@
-
+/*
 // ex 21
 
 
@@ -87,12 +87,7 @@ console.log(minimum())
 
 // ex 28
 
-const createArray = function(){
 
-}
-const arrayOfArrays = function(){
-    let arr = []
-}
 
 let largeArray = []
 const arrayOfArrays = function(){
@@ -103,7 +98,7 @@ const arrayOfArrays = function(){
     }return largeArray
 }
 
-console.log(arrayOfArrays(n))
+console.log(arrayOfArrays(10))
 
 
 // ex 29
@@ -139,5 +134,37 @@ sumOfArray(arr1,arr2)
 
 let elementWithIDContainer = document.getElementById("container")
 
-// ex32
+// ex 32
+
 let allTDs = document.getElementsByTagName("td")
+
+// ex 33
+
+for(i=0; i<allTDs.length; i++){
+    console.log(allTDs[i])
+}
+*/
+// ex 34
+
+const headingChange = function(){
+    
+    let heading = document.getElementsByTagName("h1")[0]
+    heading.innerText = "It did change"
+
+}
+
+// ex 35
+
+const extraRow = function(){
+    let link = document.querySelectorAll("table")
+        let newRow = document.createElement("tr")
+        link.appendChild(newRow)
+}
+
+// ex 36
+const addClass = function(){
+    let classedRow = document.querySelectorAll("tr")
+    for(i=0; i<classedRow.length; i++){
+        classedRow[i].classList.add("test")
+    }
+}
