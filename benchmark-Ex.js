@@ -214,3 +214,13 @@ const hideImage = function(){
         img[i].style.visibility=("hidden")
     }
 }
+
+// ex 43
+
+const hideTable = function(){
+    let table = document.getElementsByTagName("table")
+    for(i=0; i<table.length; i++){
+        table[i].classList.toggle("invisible")
+    }
+
+}
