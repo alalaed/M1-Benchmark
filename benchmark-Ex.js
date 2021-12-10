@@ -204,3 +204,13 @@ const emptyList = function(){
         list[i].innerText = ""
     }
 }
+
+
+// ex 41
+
+const hideImage = function(){
+    let img = document.getElementsByTagName("img")
+    for(i=0;i<img.length; i++){
+        img[i].style.visibility=("hidden")
+    }
+}
