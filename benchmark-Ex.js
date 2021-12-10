@@ -206,7 +206,7 @@ const emptyList = function(){
 }
 
 
-// ex 41
+// ex 42
 
 const hideImage = function(){
     let img = document.getElementsByTagName("img")
