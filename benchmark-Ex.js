@@ -194,3 +194,13 @@ const addNewItems = function(){
     list[0].appendChild(newItem)
     newItem.innerText = "and this is the added item to the unordered list"
 }
+
+
+// ex 40
+
+const emptyList = function(){
+    let list = document.querySelectorAll("ol li")
+    for (i=0; i<list.length; i++){
+        list[i].innerText = ""
+    }
+}
