@@ -1,21 +1,12 @@
-const randomNumbers = function(){
-    let randArray = []
-    for(i=0; i<10;i++){
-        let x = Math.floor(Math.random()*101)
-        randArray.push(x)
-        
-    } return randArray
+let arr1 = [1,2,3,4,5,6]
+let arr2 = [1,2,3,4,5,6,7,8,9]
+
+const compare = function(x,y){
+    if (x.length>y.length){
+        console.log("The longer array is:" + x)
+    } else{
+        console.log("The longer array is:" + y)
+    }
 }
 
-//console.log(randomNumbers())
-
-let largeArray = []
-const arrayOfArrays = function(){
-    for(i=0; i<10; i++){
-        
-        let random = randomNumbers()
-        largeArray.push(random)
-    }return largeArray
-}
-
-console.log(arrayOfArrays())
+compare(arr1,arr2)
