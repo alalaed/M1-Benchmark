@@ -168,3 +168,29 @@ const addClass = function(){
         classedRow[i].classList.add("test")
     }
 }
+
+
+// ex 37
+
+const redBackground = function(){
+    let redBackground = document.getElementsByClassName("redded")
+    for (i=0; i<redBackground.length; i++){
+        redBackground[i].classList.backgroundcolor = ("red")
+    }
+}
+
+// ex 38
+
+window.onload= function(){
+    console.log ("its ready")
+}
+
+
+// ex 39
+
+const addNewItems = function(){
+    let list = document.querySelectorAll("div ul")
+    let newItem = document.createElement("li")
+    list[0].appendChild(newItem)
+    newItem.innerText = "and this is the added item to the unordered list"
+}
