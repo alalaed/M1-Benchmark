@@ -35,3 +35,10 @@ td{
     border-width: 2px;
     border-color: green;
 }
+
+.new{
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(3, 59, 182);
+    size: 5%
+}

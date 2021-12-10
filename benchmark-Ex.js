@@ -239,18 +239,30 @@ const sumOfAllNrs = function(){
 }
 
 
+// ex 49
+
 const createATable = function(){
     let table = document.createElement("table")
-    table.classList.add("border")
     let body = document.getElementsByTagName("body")
     body[0].appendChild(table)
     for(i=0; i<4; i++){
         let row = document.createElement("tr")
-        let cell = document.createElement("td")
-        cell.classList.add("td")
-        row.appendChild(cell)
+        row.classList.add("new")
+        for(i=0; i<3; i++){
+            cell = document.createElement("td") 
+            cell.innerText=("123")
+            row.appendChild(cell)  
+        }
         table.appendChild(row)
-    }
+    }  
     
-    
+}
+
+
+// ex 50
+
+const removeLastTable = function(){
+    let lastTable = document.getElementsByTagName("table")
+        lastTable[lastTable.length-1].remove()
+
 }
