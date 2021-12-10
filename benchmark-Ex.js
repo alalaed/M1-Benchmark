@@ -181,9 +181,9 @@ const redBackground = function(){
 
 // ex 38
 
-window.onload= function(){
+/*window.onload= function(){
     console.log ("its ready")
-}
+}*/
 
 
 // ex 39
@@ -222,5 +222,35 @@ const hideTable = function(){
     for(i=0; i<table.length; i++){
         table[i].classList.toggle("invisible")
     }
+}
 
+
+// ex 44
+
+const sumOfAllNrs = function(){
+    let all = document.getElementsByTagName("td")
+    for (i=0; i<all.length;i++){
+        let sum = 0 
+        if(all[i].value==="number"){
+            sum += all[i].value
+        }
+        console.log(sum)
+    } 
+}
+
+
+const createATable = function(){
+    let table = document.createElement("table")
+    table.classList.add("border")
+    let body = document.getElementsByTagName("body")
+    body[0].appendChild(table)
+    for(i=0; i<4; i++){
+        let row = document.createElement("tr")
+        let cell = document.createElement("td")
+        cell.classList.add("td")
+        row.appendChild(cell)
+        table.appendChild(row)
+    }
+    
+    
 }
