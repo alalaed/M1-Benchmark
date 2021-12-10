@@ -55,27 +55,32 @@ const randomNumbers = function(){
         
     } return randArray
 }
-console.log(randomNumbers())
+let randomNumberArray = randomNumbers()
+console.log(randomNumberArray)
 
 // ex.27
 // Maximum / Minimum
 
 const maximum = function(){
-    let arr = randomNumbers()
-    console.log(arr)
+    
     let maximum = 0
-    for(i=0; i<arr.length;i++){
-        if (arr[i]>maximum){
-            maximum = arr[i]
-        }       
+    for(i=0; i<randomNumberArray.length;i++){
+        if (randomNumberArray[i]>maximum){
+            maximum = randomNumberArray[i]
+        }     
     } return maximum   
 }
 
 console.log(maximum())
 
 const minimum = function(){
-    let arr = randomNumbers()
     
+    let minimum = randomNumberArray[0]
 
+    for(i=0; i<randomNumberArray.length;i++){
+        if (minimum > randomNumberArray[i]){
+            minimum = randomNumberArray[i]
+        }
+    }return minimum
 }
-
+console.log(minimum())
