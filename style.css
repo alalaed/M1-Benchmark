@@ -29,3 +29,9 @@ p{
 .invisible{
     visibility: hidden;
 }
+
+td{
+    border: dashed;
+    border-width: 2px;
+    border-color: green;
+}
