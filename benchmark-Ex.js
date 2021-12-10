@@ -133,3 +133,11 @@ const sumOfArray = function(x,y){
         }console.log(sum) 
 }
 sumOfArray(arr1,arr2)
+
+
+// ex31
+
+let elementWithIDContainer = document.getElementById("container")
+
+// ex32
+let allTDs = document.getElementsByTagName("td")
